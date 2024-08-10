@@ -1,0 +1,36 @@
+.local-dev::before {
+    content: "js off";
+    content: attr(data-content);
+    position: fixed;
+    border: 2.5px solid #ff5733;
+    bottom: 0;
+    right: 0;
+    color: var(--global-font-color);
+    padding: 0.5rem;
+    z-index: 1000;
+    opacity: 0.8;
+}
+
+@media (--mobile) {
+    background: #fdc;
+}
+
+@media (--mobile-small) {
+    background: #f99;
+}
+
+@media (--tablet) {
+    background: #cfc;
+}
+
+@media (--tablet-small) {
+    background: #fffc;
+}
+
+@media (--desktop) {
+    background: #cef;
+}
+
+@media (--widescreen) {
+    background: #ecf;
+}

@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Viewport Debugger",
+  "version": "1.0",
+  "description": "Adds viewport dimensions to the body content data-content attribute.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
+
