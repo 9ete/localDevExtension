@@ -51,27 +51,52 @@ function init() {
             iconDiv.id = 'framework-icon';
             iconDiv.style.position = 'fixed';
             iconDiv.style.bottom = '0';
-            iconDiv.style.right = '0';
+            iconDiv.style.right = '6rem';
             iconDiv.style.zIndex = '1000';
             iconDiv.style.padding = '10px';
 
             let iconUrl;
             switch (framework) {
                 case 'wordpress':
-                    iconUrl = 'https://example.com/icons/wordpress-icon.png';
+                    iconUrl = 'https://s.w.org/favicon.ico?2'; // Official WordPress favicon
                     break;
                 case 'drupal':
-                    iconUrl = 'https://example.com/icons/drupal-icon.png';
+                    iconUrl = 'https://www.drupal.org/favicon.ico'; // Official Drupal favicon
                     break;
                 case 'laravel':
-                    iconUrl = 'https://example.com/icons/laravel-icon.png';
+                    iconUrl = 'https://laravel.com/img/logomark.min.svg'; // Official Laravel logomark
                     break;
                 case 'react':
-                    iconUrl = 'https://example.com/icons/react-icon.png';
+                    iconUrl = 'https://reactjs.org/favicon.ico'; // Official React favicon
+                    break;
+                case 'vue':
+                    iconUrl = 'https://vuejs.org/images/logo.png'; // Official Vue.js logo
+                    break;
+                case 'angular':
+                    iconUrl = 'https://angular.io/assets/images/favicons/favicon.ico'; // Official Angular favicon
+                    break;
+                case 'django':
+                    iconUrl = 'https://www.djangoproject.com/m/img/logos/django-logo-positive.svg'; // Official Django logo
+                    break;
+                case 'ruby-on-rails':
+                    iconUrl = 'https://rubyonrails.org/favicon.ico'; // Official Ruby on Rails favicon
+                    break;
+                case 'spring':
+                    iconUrl = 'https://spring.io/favicon.ico'; // Official Spring favicon
+                    break;
+                case 'svelte':
+                    iconUrl = 'https://svelte.dev/favicon.png'; // Official Svelte favicon
+                    break;
+                case 'ember':
+                    iconUrl = 'https://emberjs.com/images/icons/favicon.ico'; // Official Ember.js favicon
+                    break;
+                case 'flask':
+                    iconUrl = 'https://flask.palletsprojects.com/en/2.2.x/_static/flask-icon.png'; // Official Flask logo
                     break;
                 default:
                     iconUrl = null;
             }
+
 
             if (iconUrl) {
                 const img = document.createElement('img');
