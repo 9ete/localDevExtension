@@ -11,26 +11,44 @@
     opacity: 0.8;
 }
 
-@media (--mobile) {
-    background: #fdc;
+@media screen and (max-width: 37.5rem) { /* 600px */
+
+    .local-dev::before {
+        background: #fdc;
+    }
 }
 
-@media (--mobile-small) {
-    background: #f99;
+@media screen and (max-width: 47.9375em) { /* 767px */
+
+    .local-dev::before {
+        background: #f99;
+    }
 }
 
-@media (--tablet) {
-    background: #cfc;
+@media screen and (min-width: 48rem) and (max-width: 60rem) { /* 768px - 960px */
+
+    .local-dev::before {
+        background: #cfc;
+    }
 }
 
-@media (--tablet-small) {
-    background: #fffc;
+@media screen and (min-width: 48rem) and (max-width: 63.9375rem) { /* 768px - 1023px */
+
+    .local-dev::before {
+        background: #fffc;
+    }
 }
 
-@media (--desktop) {
-    background: #cef;
+@media screen and (min-width: 64rem) and (max-width: 74.9375rem) { /* 1024px - 1199px */
+
+    .local-dev::before {
+        background: #cef;
+    }
 }
 
-@media (--widescreen) {
-    background: #ecf;
+@media screen and (min-width: 75rem) { /* 1200px */
+
+    .local-dev::before {
+        background: #ecf;
+    }
 }
